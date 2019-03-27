@@ -28,10 +28,9 @@
         
         document.onekeyup =function(event){
             var userGuess = event.key;
-            console.log("Player", player);
+            
             var computerGuess = computerChoices[Math.floor(math.random()* computerChoices.length)];
-            console.log("Computer", computer);
-            var computerChoices = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"];
+            var options = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"];
 
             if(player == computer){
                 console.log("Tie");
